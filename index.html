@@ -43,7 +43,18 @@
         <section class="hero">
         <div class="container">
           <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br/> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button type="button" name="заказать услугу" class="button">Заказать услугу</button>
+          <button type="button" name="заказать услугу" class="button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+              <div class="modal-wraper">
+              <div class="modal-wraper"> 
+                  <button class="modal-btn" data-modal-close>
+                      <svg width="18" height="18">
+                          <use href="./images/sprite.svg#icon-close-black"></use>
+                      </svg>
+                  </button>
+              <form class="modal-form"></form>
+              </div>
+          </div>
         </div> 
     </section>
        
@@ -98,9 +109,9 @@
         <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
            <ul class="units list">
-               <li class="item"> <img src="./images/box1.jpg" alt="Десктопные приложения" width="370"> </li>
-               <li class="item"> <img src="./images/box2.jpg" alt="Мобильные приложения" width="370"> </li>
-               <li class="item"> <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370"> </li>
+               <li class="item"> <img src="./images/box1.jpg" alt="Десктопные приложения" width="370"> <p class="text-units">ДEСКТОПТНЫЕ ПРИЛОЖЕНИЯ</p></li>
+               <li class="item"> <img src="./images/box2.jpg" alt="Мобильные приложения" width="370"> <p class="text-units">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p></li>
+               <li class="item"> <img src="./images/box3.jpg" alt="Дизайнерские решения" width="370"> <P class="text-units">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</P> </li>
            </ul>
         </div>
     </section>
@@ -348,5 +359,7 @@
         </div>
             </footer>
   
+ <script src="./js/modal.js"> </script>
+
 </body>
 </html>
